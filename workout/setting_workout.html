@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .container--header {
+        text-align: center;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        border: 1px solid #cccccc;
+      }
+      .container--body {
+        width: 100%;
+        height: 350px;
+        border: 1px solid #cccccc;
+      }
+      .container--footer {
+        width: 100%;
+        height: 50px;
+        float: left;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+      }
+
+      .container--header__img {
+        float: left;
+        width: 12%;
+
+        box-sizing: border-box;
+      }
+      .container--header__text {
+        float: left;
+        text-align: center;
+        width: 40%;
+        box-sizing: border-box;
+      }
+
+      .container--body__combo {
+        width: 30%;
+        margin-top: 10px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+      }
+
+      .margin--left__15 {
+        margin-left: 15%;
+      }
+
+      .margin--left__10 {
+        margin-left: 10%;
+      }
+
+      .container--footer__button {
+        float: left;
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container--header">
+        <div class="container--header__img">
+          <img src="iconmonstr-plus-1-32.png" alt="Add" />
+        </div>
+
+        <div class="container--header__text"><h3>Work Out</h3></div>
+
+        <div class="container--header__text"><h3>Sets</h3></div>
+      </div>
+
+      <div class="container--body">
+        <select class="container--body__combo margin--left__15">
+          <option value="PUSHUP">PUSHUP</option>
+        </select>
+
+        <select class="container--body__combo margin--left__10">
+          <option value="SETS">1</option>
+          <option value="SETS">2</option>
+          <option value="SETS">3</option>
+          <option value="SETS">4</option>
+          <option value="SETS">5</option>
+        </select>
+
+        <select class="container--body__combo margin--left__15">
+          <option value="PUSHUP">PULLUP</option>
+        </select>
+
+        <select class="container--body__combo margin--left__10">
+          <option value="SETS">1</option>
+          <option value="SETS">2</option>
+          <option value="SETS">3</option>
+          <option value="SETS">4</option>
+          <option value="SETS">5</option>
+        </select>
+
+        <select class="container--body__combo margin--left__15">
+          <option value="PUSHUP">SQUART</option>
+        </select>
+
+        <select class="container--body__combo margin--left__10">
+          <option value="SETS">1</option>
+          <option value="SETS">2</option>
+          <option value="SETS">3</option>
+          <option value="SETS">4</option>
+          <option value="SETS">5</option>
+        </select>
+
+        <select class="container--body__combo margin--left__15">
+          <option value="PUSHUP">BENCH PRESS</option>
+        </select>
+
+        <select class="container--body__combo margin--left__10">
+          <option value="SETS">1</option>
+          <option value="SETS">2</option>
+          <option value="SETS">3</option>
+          <option value="SETS">4</option>
+          <option value="SETS">5</option>
+        </select>
+
+        <select class="container--body__combo margin--left__15">
+          <option value="PUSHUP">DEAD LIFT</option>
+        </select>
+
+        <select class="container--body__combo margin--left__10">
+          <option value="SETS">1</option>
+          <option value="SETS">2</option>
+          <option value="SETS">3</option>
+          <option value="SETS">4</option>
+          <option value="SETS">5</option>
+        </select>
+      </div>
+
+      <div class="container--footer">
+        <div class="container--footer__button margin--left__15">SAVE</div>
+
+        <div class="container--footer__button margin--left__10">CANCEL</div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
