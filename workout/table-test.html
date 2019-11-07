@@ -55,7 +55,7 @@
                         <td><input type="checkbox"></td>
                         <td name="name" value="push up">push up</td>
                         <td name="weight" value="0">0</td>
-                        <td name="set" value="0">
+                        <td name="set" value="5">
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -127,7 +127,7 @@
 </body>
 <script>
     document.querySelector('button').addEventListener('click', function() {
-        const checkedBoxes = document.querySelectorAll('input:checked');
+        const checkedBoxes = document.querySelectorAll('input:checked:not(.all)');
         const checkedRows = Array.prototype.slice.call(checkedBoxes);
         const cols = checkedRows.map(function(element){
             const rows = Array.prototype.slice.call(element.closest('tr').children, 1);
@@ -140,6 +140,7 @@
             }, {});
             return objs;
         });
+        console.dir(cols);
     });
 
     document.querySelectorAll('select').forEach(function(element){
